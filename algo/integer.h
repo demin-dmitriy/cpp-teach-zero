@@ -3,8 +3,8 @@
 
     3 == min_int(3, 7)
     7 == min_int(8, 7)
- */
-int min_int(int x, int y)
+*/
+inline int min_int(int x, int y)
 {
     /* FILL IN */
 }
@@ -15,7 +15,11 @@ int min_int(int x, int y)
     7 == max_int(3, 7)
     8 == max_int(8, 7)
 */
-int max_int(int x, int y)
+inline int max_int(int x, int y)
 {
     /* FILL IN */
 }
+
+/*
+
+*/
