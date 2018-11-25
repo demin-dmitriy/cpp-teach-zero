@@ -10,3 +10,4 @@
 # Домашние задания
 
 1. `algo/integer.h`
+2. `algo/array.h`
