@@ -75,7 +75,7 @@ inline int min_divisor(int x)
     4 == binomial(4, 3)
     1 == binomial(4, 4)
 */
-inline int binomial(int n)
+inline int binomial(int n, int k)
 {
     /* FILL IN */
 }
