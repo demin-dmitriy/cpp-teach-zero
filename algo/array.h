@@ -67,10 +67,10 @@ inline void shift_right(int* array, int size)
     Проверить что диапазон отсортирован по возрастанию.
 
     int array1[3] = { 1, 2, 3 };
-    true == is_sorted(array1);
+    true == is_sorted(array1, array1 + 3);
 
     int array2[3] = { 3, 2, 1 };
-    false == is_sorted(array2);
+    false == is_sorted(array2, array2 + 3);
 */
 inline bool is_sorted(int* first, int* last)
 {
