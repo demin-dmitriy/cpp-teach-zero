@@ -51,7 +51,7 @@ void testlib_run_test(char const* name, void (*test_function)(TestContext*))
     try
     {
         (*test_function)(&test_context);
-        testlib_report_success(&test_context); // no exception were thrown
+        testlib_report_success(&test_context); // no exception was thrown
     }
     catch (std::exception const& e)
     {
