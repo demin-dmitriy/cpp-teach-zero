@@ -1,3 +1,5 @@
+#pragma once
+
 #include <stdbool.h> // Нужен в C чтобы ввести тип bool. В C++ этот тип встроен в язык.
 
 /*
