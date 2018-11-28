@@ -4,6 +4,7 @@
 #include "test/testlib.h"
 
 #include <stdlib.h>
+#include <string.h>
 
 static void test_argmin(TestContext* test_context)
 {
@@ -87,10 +88,18 @@ static void test_selection_sort(TestContext* test_context)
 static void test_median(TestContext* test_context)
 {
     int array1[5] = { 2, 3, 0, 7, 5 };
+    int array1_copy[5];
+    memcpy(array1_copy, array1, 5);
+
     EXPECT_EQ(3, median(array1, array1 + 5));
+    EXPECT_EQ(0, memcmp(array1, array1_copy, 5));
 
     int array2[4] = { 9, 4, 0, 7 };
+    int array2_copy[4];
+    memcpy(array2_copy, array2, 4);
+
     EXPECT_EQ(5, median(array2, array2 + 4));
+    EXPECT_EQ(0, memcmp(array2, array2_copy, 4));
 }
 
 static void test_sum(TestContext* test_context)
