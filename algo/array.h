@@ -147,4 +147,5 @@ inline void reverse(int* first, int* last)
 inline int* concat(int* array1, int size1, int* array2, int size2)
 {
     /* FILL IN */
+    return nullptr;
 }
