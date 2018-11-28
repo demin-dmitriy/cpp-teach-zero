@@ -17,7 +17,7 @@ static void test_max_int(TestContext* test_context)
 
 static void test_tri(TestContext* test_context)
 {
-    EXPECT_TRUE(0 < tri(-1, 3));
+    EXPECT_TRUE(0 > tri(-1, 3));
     EXPECT_TRUE(0 == tri(2, 2));
     EXPECT_TRUE(0 < tri(4, 2));
 }
