@@ -13,7 +13,7 @@ const char CODE_GREEN[] = "\033[92m";
 const char CODE_RESET[] = "\033[0m";
 
 
-static std::string colored(char const* code, char const* text)
+static std::string colored(const char* code, const char* text)
 {
     if (ENABLE_COLORS)
     {
@@ -30,7 +30,7 @@ void testlib_report_success(TestContext* test_context)
     test_context->m_check_count += 1;
 }
 
-void testlib_report_fail(TestContext* test_context, char const* description)
+void testlib_report_fail(TestContext* test_context, const char* description)
 {
     test_context->m_check_count += 1;
     test_context->m_error_count += 1;
@@ -40,7 +40,7 @@ void testlib_report_fail(TestContext* test_context, char const* description)
         << std::endl;
 }
 
-void testlib_run_test(char const* name, void (*test_function)(TestContext*))
+void testlib_run_test(const char* name, void (*test_function)(TestContext*))
 {
     TestContext test_context
     {
@@ -53,7 +53,7 @@ void testlib_run_test(char const* name, void (*test_function)(TestContext*))
         (*test_function)(&test_context);
         testlib_report_success(&test_context); // no exception was thrown
     }
-    catch (std::exception const& e)
+    catch (const std::exception& e)
     {
         testlib_report_fail(&test_context, e.what());
     }

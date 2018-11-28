@@ -43,5 +43,5 @@ struct TestContext
 };
 
 void testlib_report_success(TestContext* test_context);
-void testlib_report_fail(TestContext* test_context, char const* description);
-void testlib_run_test(char const* name, void (*test_function)(TestContext*));
+void testlib_report_fail(TestContext* test_context, const char* description);
+void testlib_run_test(const char* name, void (*test_function)(TestContext*));
