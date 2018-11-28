@@ -80,7 +80,6 @@ static void test_gcd(TestContext* test_context)
     EXPECT_EQ(5, gcd(10, 25));
 }
 
-
 void run_all_integer_tests()
 {
     RUN_TEST(test_min_int);
