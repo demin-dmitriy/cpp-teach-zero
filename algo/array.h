@@ -8,10 +8,10 @@
 
     int array[7] = { 8, 3, 1, 0, 5, 5, 9 };
 
-    array + 3 == min_element(array, array + 7);
-    array + 2 == min_element(array, array + 3);
-    array + 1 == min_element(array, array + 2);
-    array + 4 == min_element(array + 4, array + 7);
+    array + 3 == argmin(array, array + 7);
+    array + 2 == argmin(array, array + 3);
+    array + 1 == argmin(array, array + 2);
+    array + 4 == argmin(array + 4, array + 7);
 */
 inline int* argmin(int* first, int* last)
 {
