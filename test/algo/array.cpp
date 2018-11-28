@@ -100,6 +100,9 @@ static void test_median(TestContext* test_context)
 
     EXPECT_EQ(5, median(array2, array2 + 4));
     EXPECT_EQ(0, memcmp(array2, array2_copy, 4));
+
+    EXPECT_EQ(9, median(array2, array2 + 1));
+    EXPECT_EQ(6, median(array2, array2 + 2));
 }
 
 static void test_sum(TestContext* test_context)
