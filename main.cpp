@@ -8,6 +8,6 @@
 
 int main()
 {
-	run_all_integer_tests();
-	run_all_array_tests();
+    run_all_integer_tests();
+    run_all_array_tests();
 }
