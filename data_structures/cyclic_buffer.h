@@ -58,7 +58,7 @@ inline void cbuffer_construct(CyclicBuffer* cbuffer, size_t reserved)
 /*
     Освободить ресурсы, занимаемые CyclicBuffer.
 */
-inline void cbuffer_destroy(CyclicBuffer* cbuffer, T_destroy t_deleter);
+inline void cbuffer_destroy(CyclicBuffer* cbuffer, T_destroy t_deleter)
 {
     /* FILL IN */
 }
@@ -69,6 +69,7 @@ inline void cbuffer_destroy(CyclicBuffer* cbuffer, T_destroy t_deleter);
 inline T* cbuffer_at(CyclicBuffer* cbuffer, size_t i)
 {
     /* FILL IN */
+    return nullptr;
 }
 
 /*
@@ -93,6 +94,7 @@ inline void cbuffer_push_back(CyclicBuffer* cbuffer, T value)
 inline T cbuffer_pop_front(CyclicBuffer* cbuffer)
 {
     /* FILL IN */
+    return T();
 }
 
 /*
@@ -101,6 +103,7 @@ inline T cbuffer_pop_front(CyclicBuffer* cbuffer)
 inline T cbuffer_pop_back(CyclicBuffer* cbuffer)
 {
     /* FILL IN */
+    return T();
 }
 
 #undef T
