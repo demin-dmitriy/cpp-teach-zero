@@ -11,3 +11,4 @@
 
 1. [algo/integer.h](algo/integer.h)
 2. [algo/array.h](algo/array.h)
+3. [data_structures/cyclic_buffer.h](data_structures/cyclic_buffer.h)
