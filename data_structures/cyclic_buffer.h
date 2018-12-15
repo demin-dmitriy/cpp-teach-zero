@@ -56,20 +56,20 @@ inline void cbuffer_construct(CyclicBuffer* cbuffer, size_t reserved)
 }
 
 /*
-    Освободить ресурсы, занимаемые CyclicBuffer.
-*/
-inline void cbuffer_destroy(CyclicBuffer* cbuffer, T_destroy t_deleter)
-{
-    /* FILL IN */
-}
-
-/*
     Вернуть указатель на элемент с индексом i.
 */
 inline T* cbuffer_at(CyclicBuffer* cbuffer, size_t i)
 {
     /* FILL IN */
     return nullptr;
+}
+
+/*
+    Освободить ресурсы, занимаемые CyclicBuffer.
+*/
+inline void cbuffer_destroy(CyclicBuffer* cbuffer, T_destroy t_deleter)
+{
+    /* FILL IN */
 }
 
 /*
