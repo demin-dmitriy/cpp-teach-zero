@@ -44,7 +44,7 @@ struct CyclicBuffer
 
     // Инварианты:
     // m_count <= m_reserved
-    // m_first <= m_reserved
+    // m_first < m_reserved
 };
 
 /*
